@@ -1,1 +1,1 @@
-Your site is live at https://mykolaprague.github.io/curlytom.github.io/
+Your site is live at https://mykolaprague.github.io/curlytom/
