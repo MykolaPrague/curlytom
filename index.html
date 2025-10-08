@@ -1,348 +1,292 @@
 <!DOCTYPE html>
-<html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="zxx">
 
-    <title>HiT</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="sourse/styles/mycss.css">
+  <link rel="stylesheet" href="sourse/styles/bgvideo.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="sourse/files/favicon_io(1)/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="sourse/files/favicon_io(1)/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="sourse/files/favicon_io(1)/favicon-16x16.png">
+  <link rel="manifest" href="sourse/files/favicon_io(1)/site.webmanifest">
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="sourse/styles/style.css" />
+  <title>HiT</title>
+</head>
 
-
-    <!-- Your styles (папка названа 'sourse' — залишив як є; рекомендую перейменувати в 'source') -->
-    <!-- <link rel="stylesheet" href="sourse/styles/mycss.css" />
-    <link rel="stylesheet" href="sourse/styles/bgvideo.css" /> -->
-
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="sourse/files/favicon_io(1)/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="sourse/files/favicon_io(1)/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="sourse/files/favicon_io(1)/favicon-16x16.png"
-    />
-    <link rel="manifest" href="sourse/files/favicon_io(1)/site.webmanifest" />
-  </head>
-
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <img src="sourse/images/logo.png" alt="HiT" height="32" />
-          </a>
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pricing.html">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-
-            <div class="d-flex align-items-center gap-2">
-              <a
-                class="nav-link p-0"
-                href="https://telegram.org/"
-                target="_blank"
-                rel="noopener"
-                aria-label="Telegram"
-              >
-                <img src="sourse/files/Telegram.png" alt="Telegram" width="32" height="32" />
-              </a>
-              <a
-                class="nav-link p-0"
-                href="https://www.viber.com/en/"
-                target="_blank"
-                rel="noopener"
-                aria-label="Viber"
-              >
-                <img src="sourse/files/Viber.jpg" alt="Viber" width="32" height="32" />
-              </a>
-              <a
-                class="nav-link p-0"
-                href="https://www.youtube.com/"
-                target="_blank"
-                rel="noopener"
-                aria-label="YouTube"
-              >
-                <img src="sourse/files/YT.png" alt="YouTube" width="32" height="32" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Hero / Video background -->
-    <section class="position-relative">
-      <div class="bg-video position-relative overflow-hidden">
-        <video
-          class="w-100"
-          src="sourse/files/nature_-_31377(1080p).mp4"
-          autoplay
-          muted
-          loop
-          playsinline
-          poster="sourse/files/video-poster.jpg"
-          aria-hidden="true"
-        ></video>
-        <div class="effect"></div>
-        <div class="video-text position-absolute top-50 start-50 translate-middle text-white text-center">
-          <h1 class="display-5 fw-bold">Future's here</h1>
-        </div>
-      </div>
-
-      <div class="container-fluid mt-4">
-        <div class="row">
-          <div class="col-lg-1"></div>
-
-          <div class="col-lg-8 col-md-12">
-            <div class="row">
-              <!-- Carousel -->
-              <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                  <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                  <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                  <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                </div>
-
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="d-block w-100">
-                      <div class="row align-items-center">
-                        <div class="col-lg-6 col-md-6">
-                          <img src="sourse/images/vr.png" class="w-100" alt="VR" />
-                        </div>
-                        <div class="col-lg-6 col-md-6 text-slide">
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatem earum eveniet vero iure placeat natus, nesciunt porro nihil!
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="carousel-item">
-                    <div class="d-block w-100">
-                      <div class="row align-items-center">
-                        <div class="col-lg-6 col-md-6">
-                          <img src="sourse/images/cpu.png" class="w-100" alt="CPU" loading="lazy" />
-                        </div>
-                        <div class="col-lg-6 col-md-6 text-slide">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quisquam molestiae rerum velit excepturi.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="carousel-item">
-                    <div class="d-block w-100">
-                      <div class="row align-items-center">
-                        <div class="col-lg-6 col-md-6">
-                          <img src="sourse/images/gpu.png" class="w-100" alt="GPU" loading="lazy" />
-                        </div>
-                        <div class="col-lg-6 col-md-6 text-slide">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quisquam molestiae rerum velit excepturi.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="carousel-item">
-                    <div class="d-block w-100">
-                      <div class="row align-items-center">
-                        <div class="col-lg-6 col-md-6">
-                          <img src="sourse/images/other.png" class="w-100" alt="Other" loading="lazy" />
-                        </div>
-                        <div class="col-lg-6 col-md-6 text-slide">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quisquam molestiae rerum velit excepturi.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="carousel-item">
-                    <div class="d-block w-100">
-                      <div class="row align-items-center">
-                        <div class="col-lg-6 col-md-6">
-                          <img src="sourse/images/controller.png" class="w-100" alt="Controller" loading="lazy" />
-                        </div>
-                        <div class="col-lg-6 col-md-6 text-slide">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quisquam molestiae rerum velit excepturi.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="carousel-item">
-                    <div class="d-block w-100">
-                      <div class="row align-items-center">
-                        <div class="col-lg-6 col-md-6">
-                          <img src="sourse/images/acc.png" class="w-100" alt="Accessories" loading="lazy" />
-                        </div>
-                        <div class="col-lg-6 col-md-6 text-slide">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quisquam molestiae rerum velit excepturi.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="carousel-item">
-                    <div class="d-block w-100">
-                      <div class="row align-items-center">
-                        <div class="col-lg-6 col-md-6">
-                          <img src="sourse/images/gaming-pc.png" class="w-100" alt="Gaming PC" loading="lazy" />
-                        </div>
-                        <div class="col-lg-6 col-md-6 text-slide">
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatem earum eveniet vero iure placeat natus, nesciunt porro nihil! Adipisci quisquam molestiae rerum velit excepturi.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="carousel-item">
-                    <div class="d-block w-100">
-                      <div class="row align-items-center">
-                        <div class="col-lg-6 col-md-6">
-                          <img src="sourse/images/laptop.png" class="w-100" alt="Laptop" loading="lazy" />
-                        </div>
-                        <div class="col-lg-6 col-md-6 text-slide">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quisquam molestiae rerum velit excepturi.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-
-              <div class="col-lg-12 col-md-12 text-center mt-4">
-                <a class="btn btn-outline-primary btn-lg my-4" href="#">See more</a>
-              </div>
-
-              <div class="col-lg-12 col-md-12 text-center mt-2">
-                <a href="#"><p class="mb-1">Can we help you?</p></a>
-              </div>
-
-              <div class="col-lg-12 col-md-12 text-center mb-4">
-                <a href="https://telegram.org/" target="_blank" rel="noopener" aria-label="Call">
-                  <img class="call-anim" style="width: 40px" src="sourse/files/phone.png" alt="Phone" />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <aside class="col-lg-3 col-md-12">
-            <div class="row px-4">
-              <div class="col-lg-12 sidebar my-4">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ad nobis aperiam quam voluptate perferendis praesentium accusamus nemo eveniet voluptas itaque, tempora repellendus nihil eaque ipsum.
-                  <a href="#">Learn more &raquo;</a>
-                </p>
-              </div>
-              <div class="col-lg-12 sidebar my-4">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ad nobis aperiam quam voluptate perferendis praesentium accusamus nemo eveniet voluptas itaque, tempora repellendus nihil eaque ipsum.
-                  <a href="#">Learn more &raquo;</a>
-                </p>
-              </div>
-              <div class="col-lg-12 sidebar my-4">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ad nobis aperiam quam voluptate perferendis praesentium accusamus nemo eveniet voluptas itaque, tempora repellendus nihil eaque ipsum.
-                  <a href="#">Learn more &raquo;</a>
-                </p>
-              </div>
-              <div class="col-lg-12 sidebar my-4">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ad nobis aperiam quam voluptate perferendis praesentium accusamus nemo eveniet voluptas itaque, tempora repellendus nihil eaque ipsum.
-                  <a href="#">Learn more &raquo;</a>
-                </p>
-              </div>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <footer class="mt-4">
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark">
       <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="col-lg-4 col-md-12 footer-text text-center">
-            <p class="mb-0">All Rights Reserved 2025</p>
+        <a class="navbar-brand" href="index.html"><img src="sourse/images/logo.png" alt="HiT"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prising.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prising.html">Contact</a>
+            <li class="nav-item">
+              <a class="nav-link" href="prising.html">
+              </a>
+              <a href="https://telegram.org/"><img style="width: 40px; margin-inline: 1em;"
+                  src="sourse/files/Telegram.png" alt="Telegram">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prising.html"></a>
+              <a href="https://www.viber.com/en/"><img style="width: 40px; margin-inline: 1em"
+                  src="sourse/files/Viber.jpg" alt="Viber"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prising.html"></a>
+              <a href="https://www.youtube.com/"><img style="width: 40px; margin-inline: 1em" src="sourse/files/YT.png"
+                  alt="Youtube"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <div class="bg-video">
+
+      <video src="sourse/files/nature_-_31377(1080p).mp4" autoplay muted loop></video>
+      <div class="effect"></div>
+      <div class="video-text">
+        <h1>Future's here</h1>
+      </div>
+    </div>
+
+    <div class=".container-fluid mt-4">
+      <div class="row">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-8 col-md-12">
+          <div class="row">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                  aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                  aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                  aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                  aria-label="Slide 8"></button>
+
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-block w-100">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <img src="sourse/images/vr.png" class="w-100" alt="...">
+                      </div>
+                      <div class="col-lg-6 col-md-6 text-slide">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatem earum eveniet vero
+                          iure placeat natus, nesciunt porro nihil! .</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-block w-100">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <img src="sourse/images/cpu.png" class="w-100" alt="...">
+                      </div>
+                      <div class="col-lg-6 col-md-6 text-slide">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quisquam molestiae rerum
+                          velit excepturi.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-block w-100">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <img src="sourse/images/gpu.png" class="w-100" alt="...">
+                      </div>
+                      <div class="col-lg-6 col-md-6 text-slide">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quisquam molestiae rerum
+                          velit excepturi.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-block w-100">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <img src="sourse/images/other.png" class="w-100" alt="...">
+                      </div>
+                      <div class="col-lg-6 col-md-6 text-slide">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quisquam molestiae rerum
+                          velit excepturi.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-block w-100">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <img src="sourse/images/controller.png" class="w-100" alt="...">
+                      </div>
+                      <div class="col-lg-6 col-md-6 text-slide">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quisquam molestiae rerum
+                          velit excepturi.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-block w-100">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <img src="sourse/images/acc.png" class="w-100" alt="...">
+                      </div>
+                      <div class="col-lg-6 col-md-6 text-slide">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quisquam molestiae rerum
+                          velit excepturi.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-block w-100">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <img src="sourse/images/gaming-pc.png" class="w-100" alt="...">
+                      </div>
+                      <div class="col-lg-6 col-md-6 text-slide">
+                        <p>Lorem ipsum dolor Quis voluptatem earum eveniet vero iure placeat natus, nesciunt porro
+                          nihil! Adipisci quisquam molestiae rerum velit excepturi.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-block w-100">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <img src="sourse/images/laptop.png" class="w-100" alt="...">
+                      </div>
+                      <div class="col-lg-6 col-md-6 text-slide">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quisquam molestiae rerum
+                          velit excepturi.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="col-lg-12 col-md-12 text-center mt-4">
+              <button type="button" class="btn btn-outline-primary btn-lg my-4">See more</button>
+
+            </div>
+
+            <div class="col-lg-12 col-md-12 text-center mt-4">
+              <a href="#">
+                <p>Can we hellp you</p>
+              </a>
+            </div>
+
+            <div class="col-lg-12 col-md-12 text-center">
+              <a href="https://telegram.org/"><img class="call-anim" style="width: 40px;" src="sourse/files/phone.png"
+                  alt="Phone"></a>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-12 footer-text text-center">
-            <p class="mb-0">Contact<br />Jobs<br />Our Team</p>
-          </div>
-          <div class="col-lg-4 col-md-12 media-links text-center">
-            <a href="https://telegram.org/" target="_blank" rel="noopener" aria-label="Telegram"
-              ><img style="width: 70px; margin-inline: 1em" src="sourse/files/Telegram.png" alt="Telegram"
-            /></a>
-            <a href="https://www.viber.com/en/" target="_blank" rel="noopener" aria-label="Viber"
-              ><img style="width: 70px; margin-inline: 1em" src="sourse/files/Viber.jpg" alt="Viber"
-            /></a>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"
-              ><img style="width: 70px; margin-inline: 1em" src="sourse/files/YT.png" alt="YouTube"
-            /></a>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <div class="row px-4">
+            <div class="col-lg-12 sidebar my-4">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ad nobis aperiam quam voluptate
+                perferendis praesentium accusamus nemo eveniet voluptas itaque, tempora repellendus nihil eaque ipsum.
+                <a href="#">Learh more>>>>></a>
+              </p>
+            </div>
+            <div class="col-lg-12 sidebar my-4">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ad nobis aperiam quam voluptate
+                perferendis praesentium accusamus nemo eveniet voluptas itaque, tempora repellendus nihil eaque ipsum.
+                <a href="#">Learh more>>>>></a>
+              </p>
+            </div>
+            <div class="col-lg-12 sidebar my-4">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ad nobis aperiam quam voluptate
+                perferendis praesentium accusamus nemo eveniet voluptas itaque, tempora repellendus nihil eaque ipsum.
+                <a href="#">Learh more>>>>></a>
+              </p>
+            </div>
+            <div class="col-lg-12 sidebar my-4">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ad nobis aperiam quam voluptate
+                perferendis praesentium accusamus nemo eveniet voluptas itaque, tempora repellendus nihil eaque ipsum.
+                <a href="#">Learh more>>>>></a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- Bootstrap JS Bundle -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <footer class="mt-4">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 footer-text text-center">
+          <p>All Rights Reserved 2023 </p>
+        </div>
+        <div class="col-lg-4 col-md-12 footer-text text-center">
+          <p>Contact<br>Job<br>Our Team</p>
+        </div>
+        <div class="col-lg-4 col-md-12 media-links">
+          <a href="https://telegram.org/"><img style="width: 70px; margin-inline: 1em;" src="sourse/files/Telegram.png"
+              alt="Telegram"></a>
+          <a href="https://www.viber.com/en/"><img style="width: 70px; margin-inline: 1em" src="sourse/files/Viber.jpg"
+              alt="Viber"></a>
+          <a href="https://www.youtube.com/"><img style="width: 70px; margin-inline: 1em" src="sourse/files/YT.png"
+              alt="Youtube"></a>
+
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
